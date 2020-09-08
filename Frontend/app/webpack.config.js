@@ -49,7 +49,7 @@ module.exports = {
     // Plugins
     plugins: [
         new HTMLWebpackPlugin({
-            template: './index.html',
+            template: './src/index.html',
             minify: {
                 collapseWhitespace: isProd,
             }
@@ -58,7 +58,7 @@ module.exports = {
             patterns: [
                 {
                     from: './imgs/',
-                    to: '../dist/imgs/',
+                    to: './dist/imgs/',
                 }
             ]
         }),
